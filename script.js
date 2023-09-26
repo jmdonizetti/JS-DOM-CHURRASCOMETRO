@@ -44,7 +44,7 @@ buttonPlus.innerText = '+';
 
 //adicionando pessoas
 buttonPlus.addEventListener('click', () =>{
-    input.value = +1;
+    input.value = parseInt(input.value)+1;
     calculator.appendChild(secondRow);
     secondInputGroup.append(buttonCalculate);
 });
@@ -56,7 +56,7 @@ minusButton.innerText = '-';
 //removendo pessoas
 minusButton.addEventListener('click', () =>{
     if(input.value > 0){
-        input.value = -1;
+        input.value = parseInt(input.value) -1;
     }
 });
 
